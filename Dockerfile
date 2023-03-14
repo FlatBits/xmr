@@ -1,6 +1,8 @@
-FROM ubuntu:20.04
+FROM alpine:3
 
 ENV PATH /opt/xmr/bin:$PATH
+
+RUN apk add gcompat
 
 COPY xmr /opt/xmr
 
