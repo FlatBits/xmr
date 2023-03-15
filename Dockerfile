@@ -1,8 +1,6 @@
-FROM alpine:3
+FROM ubuntu:22.04
 
 ENV PATH /opt/xmr/bin:$PATH
-
-RUN apk add gcompat
 
 COPY xmr /opt/xmr
 
